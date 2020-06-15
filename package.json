@@ -1,0 +1,19 @@
+{
+  "name": "texte_counter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rouret/Text_Counter.git"
+  },
+  "author": "Rouret Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rouret/Text_Counter/issues"
+  },
+  "homepage": "https://github.com/Rouret/Text_Counter#readme"
+}
