@@ -10,12 +10,9 @@ const DEFAULT_FILE_NAME = "data.txt";
 var file_name = DEFAULT_FILE_NAME;
 var text_content = "";
 
-function createDefaultFile() {
-
-}
 
 function getContent() {
-    fs.readFileSync(file_name, 'utf8')
+    return fs.readFileSync(file_name, 'utf8')
 }
 
 function error(decription) {
@@ -38,4 +35,5 @@ readInputUser.question("File name (" + DEFAULT_FILE_NAME + "):", function(name) 
     } else {
         error("This file doesn't exist");
     }
+    readInputUser.close()
 });
