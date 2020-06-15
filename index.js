@@ -1,6 +1,7 @@
 const readline = require('readline');
 const fs = require('fs')
 const Counter = require("./Counter.js")
+
 const readInputUser = readline.createInterface({
     input: process.stdin,
     output: process.stdout
@@ -25,8 +26,8 @@ function error(decription) {
 function init() {
     var text_length = text_content.length;
     console.info("Your text have " + text_length + " characters")
-    let counter = new Counter(text_content);
-    console.log(counter.getData())
+
+    console.log((new Counter(text_content, true)).toString())
 }
 //First step get file of the text
 readInputUser.question("File name (" + DEFAULT_FILE_NAME + "):", function(name) {
