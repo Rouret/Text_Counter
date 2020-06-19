@@ -26,8 +26,8 @@ function error(decription) {
 function init() {
     var text_length = text_content.length;
     console.info("Your text have " + text_length + " characters")
-
-    console.log((new Counter(text_content, true)).toString())
+    $counter=new Counter(text_content, true);
+    console.log($counter)
 }
 //First step get file of the text
 readInputUser.question("File name (" + DEFAULT_FILE_NAME + "):", function(name) {
